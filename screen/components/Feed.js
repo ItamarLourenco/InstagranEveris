@@ -23,10 +23,10 @@ export default class Feed extends React.Component{
       <ScrollView>
       <TouchableOpacity onPress={() => { navigate('Post', {data: data}) }}>
         <View style={Styles.feed.user}>
-          <Image source={ data.userPhoto } style={Styles.feed.userPhoto} />
+          <Image source={ {uri: data.userPhoto} } style={Styles.feed.userPhoto} />
           <Text style={Styles.feed.userName} >{ data.user }</Text>
         </View>
-        <Image source={ data.photo } style={Styles.feed.photo} />
+        <Image source={ {uri: data.photo} } style={Styles.feed.photo} />
         <View style={Styles.feed.buttons}>
           <TouchableOpacity onPress={() => {console.warn('Like');}}>
             <Image source={ require('../images/like.png') } style={Styles.feed.button} />
@@ -55,7 +55,7 @@ export default class Feed extends React.Component{
         {showComments ? data.comments.map((data, i) => (
           <View key={i}>
             <View style={[Styles.feed.user, Styles.comments.user]}>
-              <Image source={ data.userPhoto } style={[Styles.feed.userPhoto, Styles.comments.userPhoto]} />
+              <Image source={ {uri: data.userPhoto} } style={[Styles.feed.userPhoto, Styles.comments.userPhoto]} />
               <Text style={[Styles.feed.userName, Styles.comments.userName]}> {data.user}</Text>
             </View>
             <Text style={Styles.comments.comment}>{data.comment}</Text>

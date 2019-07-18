@@ -16,23 +16,18 @@ import Data from './Data.js'
 class Home extends React.Component{
 
   render(){
+    const {navigate} = this.props.navigation;
     return(
-      <View style={styles.contatiner}>
-        <NavigationBar />
+      <View>
+        <NavigationBar navigation={navigate} />
         <FlatList
             data={Data.feed}
             keyExtractor={(item) => item.id.toString()}
-            renderItem={({item}) => <Feed data={item} />}
+            renderItem={({item}) => <Feed data={item} navigate={navigate} />}
           />
       </View>
     )
   }
 }
-
-const styles = StyleSheet.create({
-  contatiner: {
-
-  }
-});
 
 export default Home;

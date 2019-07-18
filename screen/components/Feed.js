@@ -18,9 +18,10 @@ export default class Feed extends React.Component{
   }
 
   render(){
-    const {data} = this.props
+    const {data, navigate, showComments} = this.props
     return(
-      <TouchableOpacity>
+      <ScrollView>
+      <TouchableOpacity onPress={() => { navigate('Post', {data: data}) }}>
         <View style={Styles.feed.user}>
           <Image source={ data.userPhoto } style={Styles.feed.userPhoto} />
           <Text style={Styles.feed.userName} >{ data.user }</Text>
@@ -51,7 +52,17 @@ export default class Feed extends React.Component{
           <Text style={Styles.feed.descriptionUser}>{data.user}</Text>
             <Text style={Styles.feed.descriptionText}>{data.description}</Text>
         </View>
+        {showComments ? data.comments.map((data, i) => (
+          <View key={i}>
+            <View style={[Styles.feed.user, Styles.comments.user]}>
+              <Image source={ data.userPhoto } style={[Styles.feed.userPhoto, Styles.comments.userPhoto]} />
+              <Text style={[Styles.feed.userName, Styles.comments.userName]}> {data.user}</Text>
+            </View>
+            <Text style={Styles.comments.comment}>{data.comment}</Text>
+          </View>
+        )) : null}
       </TouchableOpacity>
+      </ScrollView>
     )
   }
 }

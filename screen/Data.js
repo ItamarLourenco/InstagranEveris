@@ -7,7 +7,39 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/1-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: [
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        },
+        {
+          user: "Fulano1",
+          userPhoto: require('./images/avatar.jpg'),
+          comment: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        }
+      ]
     },
     {
       id: 1,
@@ -15,7 +47,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/2-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 1
+      likes: 1,
+      comments: []
     },
     {
       id: 2,
@@ -23,7 +56,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/3-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 3
+      likes: 3,
+      comments: []
     },
     {
       id: 3,
@@ -31,7 +65,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/4-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 4
+      likes: 4,
+      comments: []
     },
     {
       id: 4,
@@ -39,7 +74,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/5-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 5
+      likes: 5,
+      comments: []
     },
     {
       id: 5,
@@ -47,7 +83,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/6-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 1
+      likes: 1,
+      comments: []
     },
     {
       id: 6,
@@ -55,7 +92,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/7-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 7,
@@ -63,7 +101,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/8-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 8,
@@ -71,7 +110,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/9-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 9,
@@ -79,7 +119,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/10-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 10,
@@ -87,7 +128,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/11-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 11,
@@ -95,7 +137,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/12-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 12,
@@ -103,7 +146,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/13-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 13,
@@ -111,7 +155,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/14-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 14,
@@ -119,7 +164,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/15-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
     {
       id: 15,
@@ -127,7 +173,8 @@ export default {
       userPhoto: require('./images/natgeochannel.jpg'),
       photo: require('./images/16-img.png'),
       description: "Photo By Ryan Kost",
-      likes: 2
+      likes: 2,
+      comments: []
     },
   ]
 }

@@ -4,18 +4,27 @@ import {
 
 class Styles{
     static home = StyleSheet.create({
-      contatiner: {
-        alignItems: 'center',
-        padding: 20,
-        backgroundColor: '#fafafa',
-        height: 90,
-        borderBottomWidth: .5,
-        borderColor: '#ebebeb'
-      },
       logo: {
         width:100,
         height:100,
         resizeMode: 'contain',
+        marginTop: 10
+      },
+      navigationBackBase:{
+        justifyContent: 'flex-end',
+        paddingBottom: 15,
+        paddingLeft: 10
+      },
+      navigationBack: {
+        width:20,
+        height:20,
+        resizeMode: 'contain',
+      },
+      baseLogo: {
+        flex: 1,
+        alignItems: 'center',
+        height: 80,
+        marginTop: 10,
       }
     });
 
@@ -78,6 +87,29 @@ class Styles{
       likesDescription: {
         marginLeft: 3
       }
+    });
+
+    static comments = StyleSheet.create({
+      userPhoto: {
+        width: 20,
+        height: 20,
+        borderRadius: 20/2,
+        margin:10,
+      },
+      user: {
+        marginLeft: 20,
+        marginBottom: -10,
+        flexDirection: 'row',
+        height: 50
+      },
+      userName: {
+        fontSize: 10
+      },
+      comment: {
+        fontSize: 10,
+        marginLeft: 60
+      }
     })
+
 }
 export default Styles;
